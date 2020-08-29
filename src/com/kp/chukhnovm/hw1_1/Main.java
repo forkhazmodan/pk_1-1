@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         Cat[] cats = {
+            new Cat(),
             new Cat("Vasya", new GregorianCalendar(2017, Calendar.DECEMBER, 8).getTime(), "red"),
             new Cat("Petya", new GregorianCalendar(2016, Calendar.JULY, 21).getTime(), "green"),
             new Cat("Kisa", new GregorianCalendar(2019, Calendar.JULY, 5).getTime(), "yellow")
@@ -16,6 +17,7 @@ public class Main {
         for (Cat cat : cats) {
             System.out.println(cat);
             cat.voice();
+            System.out.println();
         }
     }
 }
